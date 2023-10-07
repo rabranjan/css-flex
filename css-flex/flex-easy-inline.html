@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .some-page-wrapper {
+            display: flex;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        .orange-column {
+            background-color: orange;
+            height: 100px;
+        }
+
+        .blue-column {
+            background-color: blue;
+            height: 100px;
+        }
+
+        .green-column {
+            background-color: green;
+            height: 100px;
+        }
+
+        .f-content-center {
+            display: flex;
+            justify-content: center;
+        }
+
+        .content {
+            min-width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="width: 50%; border: 1px solid green">
+        <div class='some-page-wrapper'>
+            <div class='row'>
+                <div class='column'>
+                    <div class="f-content-center">
+                        <div class='green-column content'>
+                            Some Text in Column One
+                        </div>
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class="f-content-center">
+                        <div class='blue-column content'>
+                            Some Text in Column Two
+                        </div>
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class="f-content-center">
+                        <div class='orange-column content'>
+                            Some Text in Column Three
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="width: 80%; border: 1px red solid">
+        <div class='some-page-wrapper'>
+            <div class='row'>
+                <div class='column'>
+                    <div class="f-content-center">
+                        <div class='green-column content'>
+                            Some Text in Column One
+                        </div>
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class="f-content-center">
+                        <div class='blue-column content'>
+                            Some Text in Column Two
+                        </div>
+                    </div>
+                </div>
+                <div class='column'>
+                    <div class="f-content-center">
+                        <div class='orange-column content'>
+                            Some Text in Column Three
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
